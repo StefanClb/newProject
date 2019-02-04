@@ -1,0 +1,398 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	color: blue;
+	background-color: rgb(232, 237, 238);
+	font: 1em sans-serif;
+}
+
+
+/* navigatie CSS*/
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+	width: 80%;
+	height: 70px;
+	background-color: #bab9c8;	
+}
+
+.nav {
+	width: 150px;
+	padding: 0 2px 0 2px;
+	margin: 3px 3px 0 3px;
+
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	color: blue;
+
+	border: 1px solid black;
+	border-radius: 10px 10px 0 0;
+	background-color: rgb(220, 226, 228);
+}
+
+.nav:hover:not(.active) {
+	font-size: 2em;
+	color: darkblue;	
+}
+
+.active {
+	font-size: 2em;
+	color: white;
+	background-color: darkblue;
+}
+
+
+
+/* header CSS*/
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 80%;
+	height: 500px;
+	margin-bottom: 20px;
+
+	background-image: url(images/headkeuken.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-bottom: 40px solid #9d9ca5;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	height: 150px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+ 	width: 100%;
+	height: 200px;
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	font-size: 4em;
+	margin: 0;
+	color: darkblue;
+}
+
+.knop {
+	width: 200px;
+
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: darkblue;
+	background-color: rgb(154, 158, 158);
+	
+	padding: 5px;
+	border-radius: 10px;
+	border: solid 2px #9d9ca5;
+	margin: 0 0 20px 0;
+	}
+
+.knop:hover {
+	color: rgb(240, 242, 248);
+	background-color: #484848;
+}
+
+
+
+/* index CSS*/
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+}
+
+.idx, .prj, .inx {
+	border-right: solid 5px #9d9ca5;
+	border-bottom: solid 5px #9d9ca5;
+	background-color: #cfe1fe;
+}
+
+.idx {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.innerRow{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+
+	font-size: 1.75em;
+	color: darkblue;
+}
+
+#img {	
+	width: 250px;
+	height: 360px;
+	padding: 20px;
+	margin: 10px 20px;
+	background-color: white;
+	border: solid 2px #9d9ca5;
+}
+
+p {
+	margin: 10px 20px 10px 20px;
+}
+
+dl {
+	margin: 0 20px 0 80px;
+}
+
+dt {
+	font-size: 1.2em;
+	color: darkblue;
+}
+
+#video02 {
+	margin: 10px;
+	padding: 0 20px 20px 20px;
+	background-color: white;
+	border: solid 2px #9d9ca5;
+}
+
+footer {
+	width: 80%;
+	background-color: #9d9ca5;
+	color: white;
+	font-size: 0.8em;
+	padding: 20px 0 20px 0;
+
+	margin-top: 10px;
+	margin-bottom: 25px;
+	border: solid 1px black;	
+}
+
+.ft {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+/* projecten CSS*/
+
+.prj {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 47.5%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.5em;
+	color: darkblue;
+}
+
+h4 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: darkblue;
+}
+
+.prj p {
+	padding: 0 20px 0 20px;
+}
+
+.projectPhoto {
+		width: 90%;
+		height: 250px;
+		margin-bottom: 20px;
+}
+
+
+
+/* inspiratie CSS*/
+
+.inx {
+	width: 100%;
+	height: 150px;
+	margin: 20px 0 40px 0;
+}
+
+.inx p {
+		font-size: 2em;
+		padding: 20px;
+	}
+
+.insp {
+	width: 120px;
+	height: 80px;
+	padding: 5px 10px 5px 10px;
+	margin: 30px 20px 20px 0;
+
+	font-size: 2em;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+
+	background-color: blue;
+	border-radius: 10px;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.insp:hover {
+	background-color: darkblue;
+	box-shadow: 3px 3px 3px 3px #484848;
+}
+
+
+
+/* form CSS */
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 20px 0 20px 0;
+	padding-top: 20px;
+
+	background-color: #fff;
+	border: solid 1px black;	
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+
+	width: 90%;
+	margin: 10px;
+
+	padding: 10px 0 30px 30px;
+	background-color: #cfe1fe;
+	border-style: none;
+}
+
+.formItem {
+	margin: 20px 0 10px 0;
+}
+
+label {
+	display: block;
+	padding: 5px 0;
+}
+
+input {
+	margin-right: 10px;
+}
+
+input[type=text ], input[type=email] {
+	width: 40%;
+}
+
+input:focus, textarea:focus {
+	background-color: #ffdbca;
+}
+
+ol {
+	list-style-type: none;
+	margin: 0 40px;
+}
+
+textarea {
+	width: 40%;
+}
+
+input[type=button] {
+	margin-bottom: 30px;
+	padding: 5px;
+	font-size: 1.5em;	
+	color: #fff;
+	background-color: rgb(25, 25, 114);
+}
+
+input[type=button]:hover {
+	box-shadow: 3px 3px 3px 3px #000;
+	background-color: rgb(10, 10, 58);
+}
+
+/* modal CSS */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 500px;
+}
+
+.modal-header {
+	font-size: 1.75em; 
+	color: #fff;
+    background-color: #002851;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.modal-body {
+	font-size: 1.5em;
+	color: #000;
+    background-color: #0080c0;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: #e9e9f0;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+	text-decoration: none;
+	font-size: 60px;
+    cursor: pointer;
+}
+
